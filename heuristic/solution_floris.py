@@ -18,7 +18,7 @@ def read_data(data: str) -> tuple[pd.DataFrame, int, int]:
     
     return df, aircrafts, separation
 
-def scheduling_algorithm(df: pd.DataFrame, aircrafts: int,separation: int):
+def scheduling_algorithm(df: pd.DataFrame, aircrafts: int,separation: int) -> tuple[pd.DataFrame, int]:
     """
     The greedy algorithm for creating a landing schedule. It gives each 
     aircraft their target landing time, and if it is too close to the previous 
